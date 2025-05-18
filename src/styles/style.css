@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cairo:wght@200..1000&family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tsukimi+Rounded&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  background-color: #f3f2f2;
+  font-family: "Cairo", sans-serif;
+  color: #000;
+}
+
+button {
+  background: transparent;
+  font-family: "Cairo";
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: rgba(128, 128, 128, 0.244);
+  filter: brightness(60%);
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: #1710ef;
+  font-size: 45px;
+}
+@media (max-width: 625px) {
+  header h1 {
+    font-size: 35px;
+  }
+}
+header div {
+  display: flex;
+  gap: 20px;
+}
+header div button {
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header div .ns {
+  width: 50px;
+}
+@media (max-width: 624px) {
+  header div .ns {
+    display: none;
+  }
+}
+header div .add {
+  display: flex;
+  gap: 10px;
+  background-color: #1710ef;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+@media (max-width: 625px) {
+  header div .add span {
+    display: none;
+  }
+}
+header div .add .icon {
+  font-size: 35px;
+}
+@media (max-width: 625px) {
+  header div .add {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+}
+header div form {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header div form button {
+  padding: 0 10px;
+  color: #1710ef;
+  font-size: 20px;
+}
+header div form input {
+  width: 300px;
+}
+@media (max-width: 625px) {
+  header div form input {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media (max-width: 625px) and (max-width: 525px) {
+  header div form input {
+    width: 150px;
+    height: 50px;
+  }
+}
+
+.app {
+  padding: 10px;
+}
+
+main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+main .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+main .card:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+main .card h1 {
+  background-color: #1710ef;
+  color: white;
+  aspect-ratio: 1;
+  min-width: 60px;
+  text-align: center;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 10px;
+}
+main .card h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .card p:nth-of-type(1) {
+  color: rgb(6, 4, 39);
+}
+main .card p:nth-of-type(2) {
+  color: #1710ef;
+  margin-bottom: 20px;
+}
+main .card .bottom div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+main .card .bottom div span:nth-of-type(1) {
+  background-color: rgb(177, 177, 184);
+  padding: 8px;
+  display: flex;
+  place-items: center;
+  border-radius: 5px;
+  color: #1710ef;
+}
+main .card .bottom div span:nth-of-type(2) {
+  background-color: rgb(177, 177, 185);
+  padding: 8px;
+  display: flex;
+  place-items: center;
+  border-radius: 5px;
+  color: #1710ef;
+}
+main .card .buttons {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .card .buttons button {
+  color: rgb(18, 37, 148);
+  width: 35px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+main .card .buttons button:nth-child(1) {
+  background-color: rgb(177, 177, 184);
+}
+main .card .buttons button:nth-child(2) {
+  background-color: rgb(177, 177, 185);
+}

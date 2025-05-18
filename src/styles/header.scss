@@ -1,0 +1,86 @@
+//!scss import normalde style.scss de import etmemiz yeterli fakat variable.scss i okuyamadığı için import ettik.
+@import "./variable.scss";
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: $purple;
+    font-size: 45px;
+    @media (max-width: 625px) {
+      font-size: 35px;
+    }
+  }
+
+  div {
+    display: flex;
+    gap: 20px;
+
+    button {
+      background-color: white;
+      padding: 10px;
+      font-size: 20px;
+      display: grid;
+      place-items: center;
+      box-shadow: $shadow-2;
+    }
+
+    .ns {
+      width: 50px;
+      @media (max-width: 624px) {
+        display: none;
+      }
+    }
+
+    .add {
+      display: flex;
+      gap: 10px;
+      background-color: $purple;
+      color: white;
+      border-radius: 15px;
+      padding: 10px 20px;
+      white-space: nowrap;
+
+      span {
+        @media (max-width: 625px) {
+          display: none;
+        }
+      }
+
+      .icon {
+        font-size: 35px;
+      }
+
+      @media (max-width: 625px) {
+        padding: 10px 5px;
+        font-size: 14px;
+      }
+    }
+
+    form {
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: $shadow-2;
+
+      button {
+        padding: 0 10px;
+        color: $purple;
+        font-size: 20px;
+      }
+
+      input {
+        width: 300px;
+        @media (max-width: 625px) {
+          width: 200px;
+          height: 50px;
+          @media (max-width: 525px) {
+            width: 150px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: #1710ef;
+  font-size: 45px;
+}
+@media (max-width: 625px) {
+  header h1 {
+    font-size: 35px;
+  }
+}
+header div {
+  display: flex;
+  gap: 20px;
+}
+header div button {
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header div .ns {
+  width: 50px;
+}
+@media (max-width: 624px) {
+  header div .ns {
+    display: none;
+  }
+}
+header div .add {
+  display: flex;
+  gap: 10px;
+  background-color: #1710ef;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+@media (max-width: 625px) {
+  header div .add span {
+    display: none;
+  }
+}
+header div .add .icon {
+  font-size: 35px;
+}
+@media (max-width: 625px) {
+  header div .add {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+}
+header div form {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header div form button {
+  padding: 0 10px;
+  color: #1710ef;
+  font-size: 20px;
+}
+header div form input {
+  width: 300px;
+}
+@media (max-width: 625px) {
+  header div form input {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media (max-width: 625px) and (max-width: 525px) {
+  header div form input {
+    width: 150px;
+    height: 50px;
+  }
+}
