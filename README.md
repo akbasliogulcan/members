@@ -1,5 +1,6 @@
-<h1>🎥 Preview</h1>
-<img src="/main/Animation.gif" width="800" />
+## 🎥 Uygulama Görseli
+
+![Bookstore Demo](Animation.gif)
 
 <h2>🔧 Technologies Used</h2>
  
